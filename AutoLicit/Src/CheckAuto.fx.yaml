@@ -30,7 +30,7 @@ CheckAuto As screen:
         Layout: =Layout.Vertical
         OnSelect: =
         TemplatePadding: =0
-        TemplateSize: =233
+        TemplateSize: =186
         Transition: =Transition.Pop
         Y: =142
         ZIndex: =5
@@ -50,7 +50,6 @@ CheckAuto As screen:
             Width: |
                 =Parent.TemplateWidth
             X: =150
-            Y: =44
             ZIndex: =2
 
         Subtitle1 As label:
@@ -87,8 +86,8 @@ CheckAuto As screen:
             Text: =ThisItem.Állapot.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1.Width
-            X: =Title1.X
-            Y: =112
+            X: =150
+            Y: =68
             ZIndex: =6
 
         Subtitle1_2 As label:
@@ -103,7 +102,7 @@ CheckAuto As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1.Width
             X: =Title1.X
-            Y: =144
+            Y: =93
             ZIndex: =7
 
         Subtitle1_3 As label:
@@ -115,10 +114,12 @@ CheckAuto As screen:
             PaddingRight: =0
             PaddingTop: =0
             Text: =ThisItem.'Ajtók száma'
+            Underline: |
+                =false
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =172
+            Width: =250
+            X: =155
+            Y: =126
             ZIndex: =8
 
         Subtitle1_4 As label:
@@ -133,7 +134,7 @@ CheckAuto As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1.Width
             X: =Title1.X
-            Y: =204
+            Y: =156
             ZIndex: =9
 
         Button1 As button:
@@ -144,8 +145,8 @@ CheckAuto As screen:
             Size: =18
             Text: ="Licitek megtekintése"
             Width: =218
-            X: =407
-            Y: =93
+            X: =411
+            Y: =49
             ZIndex: =10
 
         Title1_1 As label:
@@ -162,7 +163,6 @@ CheckAuto As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: |
                 =150
-            Y: =44
             ZIndex: =13
 
         Title1_2 As label:
@@ -177,7 +177,7 @@ CheckAuto As screen:
             Size: =18
             Text: ="Kivitel"
             VerticalAlign: =VerticalAlign.Top
-            Y: =78
+            Y: =32
             ZIndex: =14
 
         Title1_3 As label:
@@ -194,7 +194,7 @@ CheckAuto As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: |
                 =150
-            Y: =204
+            Y: =156
             ZIndex: =15
 
         Title1_4 As label:
@@ -209,7 +209,7 @@ CheckAuto As screen:
             Size: =18
             Text: ="Ajtó"
             VerticalAlign: =VerticalAlign.Top
-            Y: =172
+            Y: =124
             ZIndex: =16
 
         Title1_5 As label:
@@ -224,7 +224,7 @@ CheckAuto As screen:
             Size: =18
             Text: ="Évjárat"
             VerticalAlign: =VerticalAlign.Top
-            Y: =142
+            Y: =93
             ZIndex: =17
 
         Title1_6 As label:
@@ -239,7 +239,7 @@ CheckAuto As screen:
             Size: =18
             Text: ="Állapot"
             VerticalAlign: =VerticalAlign.Top
-            Y: =110
+            Y: =61
             ZIndex: =18
 
     Label4 As label:
@@ -249,4 +249,19 @@ CheckAuto As screen:
         Width: =Parent.Width
         Y: =72
         ZIndex: =6
+
+    btnCheckAuto_1 As button:
+        Fill: =RGBA(158, 11, 15, 1)
+        Height: =84
+        OnSelect: =Navigate(CheckAuto,ScreenTransition.Cover)
+        RadiusBottomLeft: =45
+        RadiusBottomRight: =45
+        RadiusTopLeft: =45
+        RadiusTopRight: =45
+        Size: =18
+        Text: ="Autók megtekintése"
+        Width: =438
+        X: =101
+        Y: =860
+        ZIndex: =7
 
