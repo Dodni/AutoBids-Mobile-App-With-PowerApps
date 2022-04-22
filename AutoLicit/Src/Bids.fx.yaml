@@ -179,23 +179,6 @@ Bids As screen:
         Y: =72
         ZIndex: =4
 
-        Title1_7 As label:
-            DisplayMode: =DisplayMode.View
-            FontWeight: =FontWeight.Normal
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: |
-                =Parent.TemplateWidth
-            Y: =44
-            ZIndex: =2
-
         Subtitle1_6 As label:
             DisplayMode: =DisplayMode.View
             Height: =Self.Size * 1.8
@@ -208,7 +191,6 @@ Bids As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1_7.Width
             X: =150
-            Y: =44
             ZIndex: =3
 
         Separator1_1 As rectangle:
@@ -230,8 +212,7 @@ Bids As screen:
             Text: =ThisItem.'Created By'.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1_7.Width
-            X: =150
-            Y: =76
+            Y: =32
             ZIndex: =6
 
         Subtitle1_7 As label:
@@ -263,7 +244,6 @@ Bids As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: |
                 =150
-            Y: =44
             ZIndex: =13
 
         Title1_9 As label:
@@ -278,7 +258,7 @@ Bids As screen:
             Size: =18
             Text: ="Kolléga"
             VerticalAlign: =VerticalAlign.Top
-            Y: =78
+            Y: =32
             ZIndex: =14
 
         Title1_13 As label:

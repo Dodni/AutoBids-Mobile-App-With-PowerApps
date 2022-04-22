@@ -86,13 +86,12 @@
     "Title1_4": 86,
     "Title1_5": 84,
     "Title1_6": 82,
-    "Title1_7": 14,
     "Title1_8": 15,
     "Title1_9": 18,
     "Üzemanyag_DataCard1": 64
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "04/22/2022 20:21:44",
+  "HeaderLastSavedDateTimeUTC": "04/22/2022 20:25:29",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -205,7 +204,6 @@
     "Title1_4": 20,
     "Title1_5": 18,
     "Title1_6": 16,
-    "Title1_7": 29,
     "Title1_8": 30,
     "Title1_9": 33,
     "Üzemanyag_DataCard1": 78
@@ -231,6 +229,6 @@
       "typedDataCard": 8
     },
     "DeserializationLoadTime": 1.7339121,
-    "ErrorCount": 0
+    "ErrorCount": 6
   }
 }
