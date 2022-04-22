@@ -47,8 +47,7 @@ CheckAuto As screen:
             Size: =18
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: |
-                =Parent.TemplateWidth
+            Width: =250
             X: =150
             ZIndex: =2
 
@@ -62,9 +61,8 @@ CheckAuto As screen:
             PaddingTop: =0
             Text: =ThisItem.Kivitel.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height + 4
+            Width: =250
+            Y: =30
             ZIndex: =3
 
         Separator1 As rectangle:
@@ -85,7 +83,7 @@ CheckAuto As screen:
             PaddingTop: =0
             Text: =ThisItem.Állapot.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
+            Width: =250
             X: =150
             Y: =68
             ZIndex: =6
@@ -100,7 +98,7 @@ CheckAuto As screen:
             PaddingTop: =0
             Text: =ThisItem.Évjárat
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
+            Width: =250
             X: =Title1.X
             Y: =93
             ZIndex: =7
@@ -132,21 +130,26 @@ CheckAuto As screen:
             PaddingTop: =0
             Text: =ThisItem.Üzemanyag.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =156
+            Width: =250
+            X: =150
+            Y: =154
             ZIndex: =9
 
         Button1 As button:
             DisplayMode: |
                 =DisplayMode.Edit
-            Height: =70
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =75
             OnSelect: =Set(gloLicit,ThisItem);Navigate(Bids)
+            RadiusBottomLeft: =45
+            RadiusBottomRight: =45
+            RadiusTopLeft: =45
+            RadiusTopRight: =45
             Size: =18
             Text: ="Licitek megtekintése"
-            Width: =218
-            X: =411
-            Y: =49
+            Width: =200
+            X: =Parent.Width/1.55
+            Y: =51
             ZIndex: =10
 
         Title1_1 As label:
@@ -177,7 +180,8 @@ CheckAuto As screen:
             Size: =18
             Text: ="Kivitel"
             VerticalAlign: =VerticalAlign.Top
-            Y: =32
+            X: =150
+            Y: =30
             ZIndex: =14
 
         Title1_3 As label:
@@ -243,25 +247,11 @@ CheckAuto As screen:
             ZIndex: =18
 
     Label4 As label:
+        BorderStyle: =BorderStyle.None
         Height: =70
         Size: =14
         Text: ="Keresés ""Márka"" szerint"
         Width: =Parent.Width
         Y: =72
         ZIndex: =6
-
-    btnCheckAuto_1 As button:
-        Fill: =RGBA(158, 11, 15, 1)
-        Height: =84
-        OnSelect: =Navigate(CheckAuto,ScreenTransition.Cover)
-        RadiusBottomLeft: =45
-        RadiusBottomRight: =45
-        RadiusTopLeft: =45
-        RadiusTopRight: =45
-        Size: =18
-        Text: ="Autók megtekintése"
-        Width: =438
-        X: =101
-        Y: =860
-        ZIndex: =7
 
